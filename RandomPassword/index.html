@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript workspace</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <h1>random Password generator</h1>
+        <label>password length :</label>
+        <input id="passLength" type="number" value="1" min="1">
+
+        <label for="includeUppLetters">include uppercase letters?</label>
+        <input type="checkbox" id="includeUppLetters">
+
+        <label for="includeLowLetters">include lowercase letters?</label>
+        <input type="checkbox" id="includeLowLetters">
+        
+        <label for="includeNumLetters">include numerical letters?</label>
+        <input type="checkbox" id="includeNumLetters">
+
+        <label for="includeSymLetters">include symbol letters?</label>
+        <input type="checkbox" id="includeSymLetters">
+        
+        
+        <button onclick="generatePasswordButt()">Click For new Password</button>
+        <label id="newPass"></label>
+    </div>
+</body>
+</html>
